@@ -1,13 +1,7 @@
-import './App.css'
+import "./App.module.css";
 
 function App() {
-
-  return (
-      <h1>
-        Finance Tracker
-      </h1>
-      
-  )
+  return <h1>Finance Tracker</h1>;
 }
 
-export default App
+export default App;

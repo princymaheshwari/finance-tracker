@@ -3,10 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "description": "AI powered Finance Tracker",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "lint:format": "npm run lint:fix && npm run format",
     "preview": "vite preview"
   },
   "dependencies": {
