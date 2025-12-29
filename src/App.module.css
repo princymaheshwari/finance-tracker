@@ -62,3 +62,26 @@
   color: var(--primary-color);
   border-bottom-color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+  .nav {
+    position: static;
+  }
+
+  .navBrand {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .navTitle {
+    font-size: var(--font-size-base);
+  }
+
+  .navLinks {
+    padding: 0 var(--spacing-md);
+  }
+
+  .navLink {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+}
