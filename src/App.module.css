@@ -32,3 +32,33 @@
   font-weight: 700;
   color: var(--primary-color);
 }
+
+.navLinks {
+  display: flex;
+  gap: var(--spacing-xs);
+  padding: 0 var(--spacing-lg);
+  overflow-x: auto;
+}
+
+.navLink {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--text-color-secondary);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition-base);
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+  background: var(--background-secondary);
+}
+
+.navLinkActive {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
