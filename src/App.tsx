@@ -1,5 +1,8 @@
 import { useState } from "react";
 import styles from "./App.module.css";
+import Transactions from "./components/Transactions";
+import TransactionForm from "./components/TransactionForm";
+import Dashboard from "./components/Dashboard";
 
 type View = "dashboard" | "transactions" | "add";
 
@@ -37,6 +40,12 @@ function App() {
           </button>
         </div>
       </nav>
+
+      <section className={styles.main}>
+        {currentView === "dashboard" && <Dashboard />}
+        {currentView === "transactions" && <Transactions />}
+        {currentView === "add" && <TransactionForm />}
+      </section>
     </main>
   );
 }
