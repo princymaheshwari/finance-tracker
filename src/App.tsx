@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-import Transactions from "./components/Transactions";
-import TransactionForm from "./components/TransactionForm";
-import Dashboard from "./components/Dashboard";
+import Transactions from "./components/transactions/Transactions";
+import TransactionForm from "./components/transactions/TransactionForm";
+import Dashboard from "./components/dashboard/Dashboard";
 
 type View = "dashboard" | "transactions" | "add";
 
