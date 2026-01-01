@@ -61,4 +61,4 @@ export const useAccountsStore = create<AccountsStore>()(
       },
     },
   ),
-); 
+);
